@@ -1,0 +1,58 @@
+$Primary_color:rgb(255, 109, 153);
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.box-shadow{
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+.btn{
+  background-color: $Primary_color;
+  color: white;
+  border-radius: 0;
+}
+
+.app-container{
+  .wrapper{
+    position: relative;
+    .header{
+      height: 5rem;
+      width: 100%;
+      background-color: $Primary_color;
+    }
+    .section{
+      background-color: white;
+      transform: translate(15%,-15%);
+      width: 80%;
+      
+      .form{
+        .input-group{
+          input{
+            width: 20px;
+          }
+        }
+      }
+      .form-body{
+        &>div{
+          border: 2px solid #ccc;
+        }
+        .form-list{
+          border-top: none;
+          i{
+            color: $Primary_color;
+            transition: transform .5s ;
+            &:hover{
+              transform: scale(1.3);
+            }
+          }
+          
+        }
+      }
+    }
+    .body{
+      height: 1rem;
+    }
+  }
+}
